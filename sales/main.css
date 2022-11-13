@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+* {
+    padding: 2vp;
+    margin: 0;
+  }
+/* .overall{
+  background-color: rgb(13, 13, 22) !important; */
+
+.top--section{
+    position:-webkit-sticky;
+    background: #e25706;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.container{
+    margin:  auto;
+    width: 94%;
+    /* background-color: rgb(13, 13, 22); */
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: auto;
+}
+.toptext{
+    display: flex;
+    font: bold  1.25em Helvetica;
+    font-weight: 600;
+    font-size: xx-large;
+    color: rgb(17, 228, 243);
+    letter-spacing: .2em;
+    text-shadow: .2em .2em .2em rgb(12, 13, 14);
+    font-stretch:extra-expanded;
+    padding-left: 5%;
+}
+.navg{
+    padding-left: 3%;
+    padding-right: 2%;
+}
+.cart{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    position:-webkit-sticky;
+    align-items: right;
+    padding-left: 5%;
+    margin-right: 1%;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font: 1em georgia;
+}
+a:hover{
+    color: rgb(17, 228, 243);
+    font-style: oblique;
+}
+ul,li,ol,dl,dt{
+    list-style: none;
+}
+nav ul{
+    display: flex ;
+}
+nav ul, li a{
+    font-weight: 150px;
+    position: relative;
+}
+nav ul, li{
+    margin-left:auto;
+    margin-right:20%;
+}
+.searchmother {
+    max-width: 100%;
+}
+#search{
+    width: 300px;
+    height: 30px;
+}
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  .searchbutton {
+    margin: auto;
+    margin-left: .2em;
+  }
+  .searchbutton:hover {
+    background: dodgerblue;
+  }
+  .home{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 100%;
+  }
+  .home:hover{ background:#3e8e41}
+  /* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+
+    border: none;
+    font-size: 100%;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+.shelf{
+  display:-webkit-flex;
+  justify-content: space-evenly;
+  margin-left: 3em;
+
+  position:unset;
+}
+  .gallery {
+    --n: 1; /* number of rows*/
+    --m: 2; /* number of columns */
+    --h: calc((70vh - (var(--n) - 1)*var(--g))/var(--n));
+    --w: calc((70vw - (var(--m) - 1)*var(--g))/var(--m)); 
+    --g: 10px;  /* control the gap */
+    --f: 1.2;   /* control the scale factor */
+    
+    /* display: inline-flex; */
+    position: block;
+    gap: var(--g);
+    width: 50vw;
+    height: 60vh;
+    grid-template-rows: repeat(var(--m),auto);
+  }
+  
+  .gallery > img {
+    width: 0;
+    height: 0;
+    min-height: 70%;
+    min-width: 70%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+  }
+  
+  .gallery img:hover{
+    filter: grayscale(0);
+    width:  calc(var(--w)*var(--f));
+    height: calc(var(--h)*var(--f));
+    z-index: 1070;
+   
+  }
+  
+  
+ .main--container{
+    margin: 0;
+    background: white;/*rgb(13, 13, 22);*/
+    padding: 4em;
+    padding-right: 2em;
+  }
+ .gradient-bg {
+  background-color:hsl(24, 100%, 1%);
+ }
+    

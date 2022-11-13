@@ -1,0 +1,239 @@
+.top--section{
+    background: #e25706;
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+.container{
+    margin:  auto;
+    width: 100%;
+}
+header {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+.logo {
+    margin: auto;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font: 1em georgia;
+}
+a:hover{
+    color: rgb(17, 228, 243);
+    font-style: oblique;
+}
+ul,li,ol,dl,dt{
+    list-style: none;
+}
+nav ul{
+    display: flex ;
+}
+nav ul, li a{
+    font-weight: 150px;
+    position: relative;
+}
+nav ul, li{
+    margin-left:auto;
+    margin-right:20%;
+}
+.searchmother {
+    max-width: 100%;
+}
+#search{
+    width: 400px;
+    height: 40px;
+}
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-left: 20%;
+}
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  .searchbutton {
+    margin: auto;
+    margin-left: .2em;
+  }
+  .searchbutton:hover {
+    background: dodgerblue;
+  }
+header>p{
+margin-left:45% ;
+margin-right: 2%;
+display: flex-box;
+align-content: right;
+text-align: right;
+float: right;
+}
+/*body*/
+.body {
+    margin: auto;
+    padding: 4em;
+}
+/* form pop */
+
+
+/* 
+*{
+margin:0;
+padding:0;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+body{
+background:#263238;
+position:relative;
+}
+
+.close{
+position:absolute;
+color:#fff;
+top:20px;
+right:50px;
+font-size:1.7em;
+cursor:pointer;
+display:none;
+z-index:999;
+-webkit-transform:rotate(0deg);
+transform:rotate(0deg);
+-webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+transition:         all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+
+.close:hover{
+font-size:2.4em;
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg);
+}
+/*-------------- saerch section -----------*/
+.search{
+position:fixed;
+top:50%;
+left:50%;
+-webkit-transform:translate(-50%, -50%);
+transform:translate(-50%, -50%);
+border-radius:1000px;
+width:0;
+height:0;
+background:#03a9f4;
+-webkit-transition: all .4s linear;
+transition:  all .4s linear;
+}
+
+.search i{
+color:#03a9f4;
+font-size:1.7em;
+cursor:pointer;
+}
+
+.search .input{
+position:absolute;
+top:50%;
+left:50%;
+-webkit-transform:translate(-50%, -50%);
+transform:translate(-50%, -50%);
+width:350px;
+height:40px;
+background:transparent;
+border:none;
+outline:none;
+border-bottom:3px solid #eee;
+color:#eee;
+font-size:1.3em;
+display:none;
+}
+
+
+.search.open{
+height:4000px;
+width:4000px;
+} */
+
+/* new */
+ /* The Modal (background) */
+ .modal {
+    display:inline; /* Hidden by default */
+    position:-webkit-sticky; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 4em;
+    top: 4em;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /*Enable scroll if needed*/
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    /* justify-content: center; */
+    padding: 2em;
+    background-color: rgb(17, 228, 243);
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+  .form{
+   
+        margin        : 0;
+        padding       : 0;
+        display       : grid;
+        place-content : center;
+     }
+  
+
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .loginbtn {
+    display: block;
+    align-items: flex-end;
+    margin-left: 30%;
+  }
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  } 

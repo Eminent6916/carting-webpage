@@ -1,0 +1,15 @@
+.hbody{
+    padding: 4em;
+    display: flex;
+    display: -ms-flexbox;
+    
+}
+.hbodydd {
+ font-weight: bolder;
+ font-size: x-large;
+}
+.giff img{
+    width:420px;
+    height:300px; 
+    display:flex;
+}
