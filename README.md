@@ -1,3 +1,3 @@
 # carting-webpage
 start from index
-only shoe is active
+only shoe is presently active
